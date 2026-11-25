@@ -78,3 +78,21 @@ footer {
     padding: 15px;
     border-top: 1px solid #333333;
 }
+
+.img-portada {
+    display: block;
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 6px;
+}
+
+.img-personaje {
+    display: block;
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    border-radius: 6px;
+}
