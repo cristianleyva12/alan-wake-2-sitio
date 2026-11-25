@@ -24,6 +24,7 @@
             <p id="texto-pista">Usa la linterna para quitar la oscuridad de los enemigos.</p>
             <button onclick="cambiarPista()">Siguiente pista</button>
         </section>
+
         <article>
             <h2>Dos realidades. Una pesadilla.</h2>
             <p>Una serie de asesinatos rituales amenaza Bright Falls, una pequeña comunidad rodeada de naturaleza en el noroeste del Pacífico. Saga Anderson, una agente del FBI con reputación de resolver casos imposibles, llega para investigar.</p>
@@ -31,14 +32,28 @@
         </article>
 
         <aside>
-            <h3>Comentarios de la comunidad</h3>
-            <p>Espacio reservado para el foro de comentarios.</p>
+            <section id="comentarios">
+        <h3>Comentarios de la comunidad</h3>
+        <div id="disqus_thread"></div>
+        <script>
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://alan-wake-2-sitio.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+            </section>
         </aside>
     </main>
 
     <footer>
         <p>Proyecto Web - Alan Wake 2 Fan Site | Desarrollado por Cristian Leyva</p>
     </footer>
-    <script src="behavior.js"></script>
+    <script src="pistas.js"></script>
 </body>
 </html>
