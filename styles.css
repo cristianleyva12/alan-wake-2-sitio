@@ -96,3 +96,12 @@ footer {
     margin-top: 12px;
     border-radius: 6px;
 }
+
+.img-control {
+    display: block;
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    border-radius: 6px;
+}
