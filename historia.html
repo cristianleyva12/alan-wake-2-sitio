@@ -4,36 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Wake 2 - Historia</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="behavior.js"></script>
 </head>
-<body>
+<body class="works_on_smartphone">
     <header>
-        <h1>ALAN WAKE II</h1>
-        <nav>
+        <div class="right">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://cristianleyva12.github.io/alan-wake-2-sitio/historia.html" target="_blank" rel="noopener">Facebook</a>
+            <span> | </span>
+            <a href="https://twitter.com/intent/tweet?text=Conoce%20la%20historia%20de%20Alan%20Wake%202&url=https://cristianleyva12.github.io/alan-wake-2-sitio/historia.html" target="_blank" rel="noopener">Twitter</a>
+        </div>
             <ul>
+                <li class="logo">&#9789;</li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
             </ul>
-        </nav>
     </header>
 
     <main>
         <article>
+            <h1>ALAN WAKE II</h1>
             <h2>La historia y el Universo Remedy</h2>
             <p>Trece años después de los sucesos de Bright Falls y su desaparición en el Lugar Oscuro, Alan Wake intenta escribir una salida mientras una secta oscura altera la realidad en el noroeste del Pacífico.</p>
             <p>La trama conecta directamente con el universo de <em>Control</em> y la Oficina Federal de Control (FBC), explorando los Eventos Mundiales Alterados (AWE) alrededor de Cauldron Lake.</p>
-            <img src="img/control-logo.jpg" alt="Jesse Faden y logotipo de Control en el Universo Remedy" class="img-control">
+
+            <blockquote>
+                "No es un lago, es un océano." — Alan Wake
+            </blockquote>
+
+            <img src="img/control-logo.jpg" alt="Jesse Faden y logotipo de Control en el Universo Remedy" id="smart_thumbnail" class="small img-control">
         </article>
 
         <aside>
-            <h3>Cita clave</h3>
-            <p>"No es un lago, es un océano." — Alan Wake</p>
+            <section id="comentarios">
+                <h3>Comentarios de la comunidad</h3>
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://alan-wake-2-sitio.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>
+                    Please enable JavaScript to view the
+                    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+            </section>
         </aside>
     </main>
 
     <footer>
-        <p>Proyecto Programación Sitios Web - Alan Wake 2 | Desarrollado por Cristian Leyva</p>
+        <p>Made by Cristian Leyva Gonzalez for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
     </footer>
 </body>
 </html>
