@@ -1,65 +1,70 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #111111;
-    color: #eeeeee;
+    background-color: #ffffff;
+    color: #111111;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1c1c1c;
-    padding: 15px;
-    border-bottom: 2px solid #b91c1c;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    border-bottom: 1px solid #dddddd;
 }
 
-h1 {
-    margin: 0 0 10px 0;
-    color: #ffffff;
-}
-
-nav ul {
+header ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-nav li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav a {
-    color: #dddddd;
+header a {
+    color: #111111;
     text-decoration: none;
 }
 
-nav a:hover {
-    color: #ef4444;
+header a:hover {
+    text-decoration: underline;
 }
 
 main {
+    display: flex;
+    flex: auto;
+    gap: 20px;
     padding: 20px;
+    background-color: #ffffff;
 }
 
-article, aside {
-    background-color: #1a1a1a;
+article {
+    flex: 2;
+    overflow-y: auto;
+    background-color: #ffffff;
     padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #333333;
+    border: 1px solid #e5e5e5;
 }
 
-h2 {
-    color: #ffffff;
+aside {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
 }
 
-h3 {
-    color: #f87171;
+h1, h2, h3 {
+    color: #111111;
 }
 
 section {
     margin-top: 15px;
     padding-top: 10px;
-    border-top: 1px solid #333333;
+    border-top: 1px solid #eeeeee;
 }
 
 img {
@@ -71,37 +76,32 @@ img.small {
     width: 220px;
 }
 
-footer {
-    background-color: #1c1c1c;
-    color: #aaaaaa;
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid #333333;
-}
-
 .img-portada {
     display: block;
     max-width: 420px;
-    width: 100%;
-    height: auto;
     margin: 0 auto 20px auto;
-    border-radius: 6px;
 }
 
 .img-personaje {
     display: block;
     max-width: 480px;
-    width: 100%;
-    height: auto;
     margin-top: 12px;
-    border-radius: 6px;
 }
 
 .img-control {
     display: block;
     max-width: 520px;
-    width: 100%;
-    height: auto;
     margin-top: 12px;
-    border-radius: 6px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #333333;
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid #dddddd;
+}
+
+footer a {
+    color: #111111;
 }
