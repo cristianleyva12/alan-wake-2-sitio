@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Wake 2 - Personajes</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="behavior.js"></script>
 </head>
-<body>
+<body class="works_on_smartphone">
     <header>
-        <h1>ALAN WAKE II</h1>
-        <nav>
+        <div class="right">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://cristianleyva12.github.io/alan-wake-2-sitio/personajes.html" target="_blank" rel="noopener">Facebook</a>
+            <span> | </span>
+            <a href="https://twitter.com/intent/tweet?text=Conoce%20a%20los%20personajes%20de%20Alan%20Wake%202&url=https://cristianleyva12.github.io/alan-wake-2-sitio/personajes.html" target="_blank" rel="noopener">Twitter</a>
+        </div>
             <ul>
+                <li class="logo">&#9789;</li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
             </ul>
-        </nav>
     </header>
 
     <main>
         <article>
+            <h1>ALAN WAKE II</h1>
             <h2>Protagonistas</h2>
+            <p>Puedes alternar entre ambas campañas en casi cualquier momento de la historia.</p>
+
             <section>
                 <h3>Saga Anderson</h3>
                 <p>Agente veterana del FBI que utiliza su "Lugar Mental" para deducir pistas, perfilar sospechosos y reconstruir la verdad detrás de los asesinatos en Bright Falls.</p>
                 <img src="img/saga-anderson.jpg" alt="Saga Anderson" class="img-personaje">
             </section>
+
             <section>
                 <h3>Alan Wake</h3>
                 <p>El escritor atrapado en el Lugar Oscuro. Desde su "Sala del Escritor", reescribe escenas para moldear la realidad y sobrevivir a las sombras.</p>
@@ -34,13 +44,27 @@
         </article>
 
         <aside>
-            <h3>Dinámica de juego</h3>
-            <p>Puedes alternar entre ambas campañas en casi cualquier momento de la historia.</p>
+            <section id="comentarios">
+                <h3>Comentarios de la comunidad</h3>
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://alan-wake-2-sitio.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>
+                    Please enable JavaScript to view the
+                    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+            </section>
         </aside>
     </main>
 
     <footer>
-        <p>Proyecto Programación Sitios Web - Alan Wake 2 | Desarrollado por Cristian Leyva</p>
+        <p>Made by Cristian Leyva Gonzalez for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
     </footer>
 </body>
 </html>
