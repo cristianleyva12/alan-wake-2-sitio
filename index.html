@@ -4,64 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Wake 2 - Inicio</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="behavior.js"></script>
 </head>
-<body>
+<body class="works_on_smartphone">
     <header>
-        <h1>ALAN WAKE II</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-            </ul>
-        </nav>
+        <div class="right">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://cristianleyva12.github.io/alan-wake-2-sitio/" target="_blank" rel="noopener">Facebook</a>
+            <span> | </span>
+            <a href="https://twitter.com/intent/tweet?text=Mira%20mi%20proyecto%20de%20Alan%20Wake%202&url=https://cristianleyva12.github.io/alan-wake-2-sitio/" target="_blank" rel="noopener">Twitter</a>
+        </div>
+        <ul>
+            <li class="logo">&#9789;</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+        </ul>
     </header>
 
     <main>
-        <section>
-            <h3>Pista del caso</h3>
-            <p id="texto-pista">Usa la linterna para quitar la oscuridad de los enemigos.</p>
-            <button onclick="cambiarPista()">Siguiente pista</button>
-        </section>
-
-        <section>
-        <img src="img/logo-alan-wake-2.jpg" alt="Portada y logotipo de Alan Wake II" class="img-portada">
-        </section>
-
         <article>
+            <h1>ALAN WAKE II</h1>
             <h2>Dos realidades. Una pesadilla.</h2>
+
+            <section>
+                <h3>Pista del caso</h3>
+                <p id="texto-pista">Usa la linterna para quitar la oscuridad de los enemigos.</p>
+                <button type="button" onclick="cambiarPista()">Siguiente pista</button>
+            </section>
+
+            <section>
+                <img src="img/logo-alan-wake-2.jpg" alt="Portada y logotipo de Alan Wake II" id="smart_thumbnail" class="small img-portada">
+            </section>
+
             <p>Una serie de asesinatos rituales amenaza Bright Falls, una pequeña comunidad rodeada de naturaleza en el noroeste del Pacífico. Saga Anderson, una agente del FBI con reputación de resolver casos imposibles, llega para investigar.</p>
-            <p>Mientras tanto, Alan Wake, un escritor atrapado en una pesadilla más allá de nuestro mundo, escribe una historia oscura en un intento por moldear la realidad que lo rodea y escapar de su prisión.</p>
+            <p>Mientras tanto, Alan Wake, un escritor atrapado en un lugar conocido como "el mundo oscuro", escribe una historia intentando moldear la realidad que lo rodea y escapar de este lugar.</p>
+            <p>Cada página del manuscrito encontrada en el bosque revela fragmentos de una historia de terror que parece reescribir la realidad en tiempo real alrededor de Cauldron Lake.</p>
+            <p>Explora la investigación completa haciendo clic en la imagen de abajo:</p>
+
+            <a href="historia.html">
+                <img src="img/alan-wake.jpg" alt="Explorar historia de Alan Wake II">
+            </a>
         </article>
 
         <aside>
             <section id="comentarios">
-        <h3>Comentarios de la comunidad</h3>
-        <div id="disqus_thread"></div>
-        <script>
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://alan-wake-2-sitio.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>
-            Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-            </noscript>
+                <h3>Comentarios de la comunidad</h3>
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://alan-wake-2-sitio.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>
+                    Please enable JavaScript to view the
+                    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
             </section>
         </aside>
     </main>
 
     <footer>
-        <p>Proyecto Programación de Sitios Web - Alan Wake 2 | Desarrollado por Cristian Leyva</p>
-        <div>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://cristianleyva12.github.io/alan-wake-2-sitio/" target="_blank" rel="noopener">Facebook</a>
-        <span> | </span>
-        <a href="https://twitter.com/intent/tweet?text=Mira%20mi%20proyecto%20de%20Alan%20Wake%202&url=https://cristianleyva12.github.io/alan-wake-2-sitio/" target="_blank" rel="noopener">Twitter</a>
-    </div>
+        <p>Made by Cristian Leyva Gonzalez for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
     </footer>
     <script src="pistas.js"></script>
 </body>
